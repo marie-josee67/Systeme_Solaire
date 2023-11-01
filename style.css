@@ -73,10 +73,40 @@ footer{
 .uranus-container > img{
     height: 75px;
     width: 75px;
-    animation: neptune-rotation 53954ms linear infinite;
+    animation: uranus-rotation 37054ms linear infinite;
 }
 /* rotation de l'image */
 @keyframes uranus-rotation {
+    0%{
+        transform: rotate(0deg) translate(375px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(375px) rotate(360deg);
+
+    }
+}
+
+/* ************************************************** Planète Saturne ********************************************************** */
+
+.saturn-container{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+/* Taille de l'image de la planète Neptune */
+.saturn-container > img{
+    height: 75px;
+    width: 75px;
+    animation: saturn-rotation 27339ms linear infinite;
+}
+/* rotation de l'image */
+@keyframes saturn-rotation {
     0%{
         transform: rotate(0deg) translate(375px) rotate(0deg);
     }
