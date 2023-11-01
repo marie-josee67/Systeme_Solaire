@@ -272,3 +272,24 @@ footer{
 
     }
 }
+
+/* ************************************************** Le Soleil ********************************************************** */
+
+.soleil-container{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Taille de l'image de la planète Neptune */
+.soleil-container > img{
+    height: 310px;
+    width: 310px;
+    border-radius: 100%;
+    background-color: transparent;
+    user-select: none;
+}
