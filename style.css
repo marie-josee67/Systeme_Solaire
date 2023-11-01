@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/space-background.jpg);
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *********************************************************** Planète Neptune ***************************************************** */
+
+.neptune-container{
+    position: absolute;
+    height: 850px;
+    width: 850px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+/* Taille de l'image de la planète Neptune */
+.neptune-container > img{
+    height: 50px;
+    width: 50px;
+    animation: neptune-rotation 53954ms linear infinite;
+}
+
+/* rotation de l'image */
+@keyframes neptune-rotation {
+    0%{
+        transform: rotate(0deg) translate(425px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(425px) rotate(360deg);
+
+    }
+}
