@@ -228,7 +228,7 @@ footer{
 .venus-container > img{
     height: 20px;
     width: 20px;
-    animation: venus-rotation 11079ms linear infinite;
+    animation: venus-rotation 7259ms linear infinite;
 }
 
 /* rotation de l'image */
@@ -238,6 +238,37 @@ footer{
     }
     100%{
         transform: rotate(360deg) translate(150px) rotate(360deg);
+
+    }
+}
+
+/* ************************************************** Planète Mercure ********************************************************** */
+
+.mercure-container{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+/* Taille de l'image de la planète Neptune */
+.mercure-container > img{
+    height: 15px;
+    width: 15px;
+    animation: mercure-rotation 5768ms linear infinite;
+}
+
+/* rotation de l'image */
+@keyframes mercure-rotation {
+    0%{
+        transform: rotate(0deg) translate(125px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(125px) rotate(360deg);
 
     }
 }
