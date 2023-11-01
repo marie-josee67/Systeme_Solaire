@@ -195,8 +195,8 @@ footer{
 
 /* Taille de l'image de la planète Neptune */
 .terre-container > img{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     animation: terre-rotation 11079ms linear infinite;
 }
 
@@ -207,6 +207,37 @@ footer{
     }
     100%{
         transform: rotate(360deg) translate(175px) rotate(360deg);
+
+    }
+}
+
+/* ************************************************** Planète Vénus ********************************************************** */
+
+.venus-container{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+/* Taille de l'image de la planète Neptune */
+.venus-container > img{
+    height: 20px;
+    width: 20px;
+    animation: venus-rotation 11079ms linear infinite;
+}
+
+/* rotation de l'image */
+@keyframes venus-rotation {
+    0%{
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(150px) rotate(360deg);
 
     }
 }
