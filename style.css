@@ -66,7 +66,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 /* Taille de l'image de la planète Neptune */
@@ -75,6 +75,7 @@ footer{
     width: 75px;
     animation: uranus-rotation 37054ms linear infinite;
 }
+
 /* rotation de l'image */
 @keyframes uranus-rotation {
     0%{
@@ -88,30 +89,31 @@ footer{
 
 /* ************************************************** Planète Saturne ********************************************************** */
 
-.saturn-container{
+.saturne-container{
     position: absolute;
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 /* Taille de l'image de la planète Neptune */
-.saturn-container > img{
+.saturne-container > img{
     height: 75px;
     width: 75px;
-    animation: saturn-rotation 33218ms linear infinite;
+    animation: saturne-rotation 33218ms linear infinite;
 }
+
 /* rotation de l'image */
-@keyframes saturn-rotation {
+@keyframes saturne-rotation {
     0%{
-        transform: rotate(0deg) translate(375px) rotate(0deg);
+        transform: rotate(0deg) translate(300px) rotate(0deg);
     }
     100%{
-        transform: rotate(360deg) translate(375px) rotate(360deg);
+        transform: rotate(360deg) translate(300px) rotate(360deg);
 
     }
 }
@@ -126,7 +128,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 /* Taille de l'image de la planète Neptune */
@@ -135,13 +137,76 @@ footer{
     width: 75px;
     animation: jupiter-rotation 27339ms linear infinite;
 }
+
 /* rotation de l'image */
 @keyframes jupiter-rotation {
     0%{
-        transform: rotate(0deg) translate(375px) rotate(0deg);
+        transform: rotate(0deg) translate(250px) rotate(0deg);
     }
     100%{
-        transform: rotate(360deg) translate(375px) rotate(360deg);
+        transform: rotate(360deg) translate(250px) rotate(360deg);
+
+    }
+}
+
+/* ************************************************** Planète Mars ********************************************************** */
+
+.mars-container{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+/* Taille de l'image de la planète Neptune */
+.mars-container > img{
+    height: 35px;
+    width: 35px;
+    animation: mars-rotation 12684ms linear infinite;
+}
+
+/* rotation de l'image */
+@keyframes mars-rotation {
+    0%{
+        transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(200px) rotate(360deg);
+
+    }
+}
+
+/* ************************************************** Planète Terre ********************************************************** */
+
+.terre-container{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+/* Taille de l'image de la planète Neptune */
+.terre-container > img{
+    height: 35px;
+    width: 35px;
+    animation: terre-rotation 11079ms linear infinite;
+}
+
+/* rotation de l'image */
+@keyframes terre-rotation {
+    0%{
+        transform: rotate(0deg) translate(175px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(175px) rotate(360deg);
 
     }
 }
